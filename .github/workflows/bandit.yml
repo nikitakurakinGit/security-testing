@@ -16,6 +16,4 @@ jobs:
         uses: jpetrucciani/bandit-check@main
         with:
           path: "."
-          level: high
-          confidence: high
-          exit_zero: true
+          bandit_flags: "-lll --exit-zero"
